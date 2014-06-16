@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    link(rel="stylesheet", href="./css/bootstrap.min.css")
+    // link(rel="stylesheet", href="bootstrap-theme.min.css")
+    link(rel="stylesheet", href="./css/flat-ui.css")
+    link(rel="stylesheet", href="./css/docs.css")
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    nav.navbar.navbar-inverse.navbar-static-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#collapse')
+            span.sr-only|Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .navbar-brand|weather
+        #collapse.collapse.navbar-collapse
+          form.narvbar-form.navbar-right(role='Add')
+            .input-group
+              input.form-control#input(type='text')
+              span.input-group-btn
+                button#add.btn.btn-inverse.glyphicon.glyphicon-plus(type='button')
+
+    #list
+    script(src='./js/jquery.min.js')
+    script(src='./js/bootstrap.min.js')
+    script(src='./js/handlebars.min.js')
+    script(src='./js/index.js')
+    script(type='text/x-handlebars-template')#template
+      .media.panel
+        .pull-left
+          img.media-object(src="{{{icon}}}")
+        .pull-right.glyphicon.glyphicon-remove.remove(data-id='{{{id}}}')
+        .media-body
+          h6.media-heading|{{{name}}}, {{{country}}}
+          |{{{temp}}}

@@ -1,0 +1,48 @@
+{
+  "name": "node-weather-app",
+  "version": "0.0.1",
+  "main": "index.html",
+  "description": "node-weather-app",
+  "scripts": {
+    "start": "node_modules/nodewebkit/bin/nodewebkit"
+  },
+  "author": "Yuji Yamaguchi",
+  "license": "MIT",
+  "window": {
+    "title": "node weather",
+    "width": 300,
+    "height": 500,
+    "min_width": 300,
+    "min_height": 200,
+    "toolbar": false
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "coffee-script": "^1.7.0",
+    "gulp": "^3.6.2",
+    "gulp-clean": "^0.3.0",
+    "gulp-coffee": "^1.4.3",
+    "gulp-jade": "^0.5.0",
+    "gulp-newer": "^0.3.0",
+    "gulp-stylus": "^1.0.1",
+    "gulp-zip": "^0.3.4",
+    "nedb": "^0.10.5",
+    "nodewebkit": "^0.8.6-2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://YuG1224:duHSPh2E@github.com/YuG1224/node-weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuG1224/node-weather-app/issues"
+  },
+  "homepage": "https://github.com/YuG1224/node-weather-app",
+  "keywords": [
+    "node-webkit",
+    "weather"
+  ]
+}
